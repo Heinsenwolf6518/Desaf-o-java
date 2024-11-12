@@ -1,18 +1,9 @@
-package io.lwcl.challenges;
+package io.Gel.challenges;
 
 import java.util.Scanner;
 
-public class CreditCardValidator {
+public class Validadordetarjetadecredito {
 
-    /* Desafío 4: Validación de datos
-        Crear una aplicación que valide si un número de tarjeta de crédito es válido según el
-        algoritmo de Luhn.
-        Para resolver este desafío, debemos crear un programa que:
-
-        1. Pida al usuario que ingrese un número de tarjeta de crédito.
-        2. Verifique si el número es válido utilizando el algoritmo de Luhn.
-        3. Muestre un mensaje indicando si el número es válido o no.
-     */
 
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
@@ -28,7 +19,7 @@ public class CreditCardValidator {
 
     private static String getCardNumber(Scanner scanner) {
         System.out.print("Ingrese el número de tarjeta de crédito: ");
-        return scanner.nextLine().replaceAll("\\s+", ""); // Eliminar espacios en blanco
+        return scanner.nextLine().replaceAll("\\s+", "");
     }
 
     private static boolean isCardNumberValid(String number) {
@@ -57,12 +48,12 @@ class LuhnAlgorithm {
             if (alter) {
                 digit *= 2;
                 if (digit > 9) {
-                    digit -= 9; // Sumar los dígitos del resultado
+                    digit -= 9;
                 }
             }
 
             sum += digit;
-            alter = !alter; // Alternar el estado
+            alter = !alter;
         }
 
         // El número es válido si la suma es un múltiplo de 10
