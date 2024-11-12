@@ -1,19 +1,8 @@
-package io.lwcl.challenges;
+package io.Gel.challenges;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Calculator {
-
-    /* Desafío 1: Calculadora básica
-        Crear una aplicación que permita realizar operaciones básicas (suma, resta, multiplicación,
-        división) entre dos números.
-        Para resolver este desafío, debemos crear un programa que:
-        1. Pida al usuario que ingrese dos números.
-        2. Pida al usuario que seleccione una operación básica (suma, resta, multiplicación,
-        división).
-        3. Realice la operación seleccionada con los dos números.
-        4. Muestre el resultado al usuario.
-     */
 
     enum OperatorType {
         ADD("+"),
@@ -87,7 +76,7 @@ public class Calculator {
     }
 
     public static void main(String[] args) {
-        // Try-with-resource para AutoClose.
+ 
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.print("Enter the first number: ");
             double firstNumber = readNumber(scanner);
