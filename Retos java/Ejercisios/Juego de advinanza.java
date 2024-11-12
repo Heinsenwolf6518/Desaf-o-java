@@ -1,20 +1,10 @@
-package io.lwcl.challenges;
-import io.lwcl.utils.AnsiColor;
+package io.Gel.challenges;
+import io.Gel.utils.AnsiColor;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class GuessingGame {
-
-    /* Desafío 2: Juego de adivinanza
-        Crear un juego que genere un número aleatorio entre 1 y 100, y el usuario tenga que
-        adivinar el número.
-        Para resolver este desafío, debemos crear un programa que:
-        1. Genere un número aleatorio entre 1 y 100.
-        2. Pida al usuario que adivine el número.
-        3. Verifique si el número ingresado es mayor o menor que el número aleatorio.
-        4. Repita los pasos 2 y 3 hasta que el usuario adivine el número correctamente.
-     */
+public class Juegodeadivinanzas {
 
     private static final int MIN_NUMBER = 1;
     private static final int MAX_NUMBER = 100;
@@ -59,7 +49,7 @@ public class GuessingGame {
                 }
             } catch (Exception e) {
                 System.out.println("Entrada invalida. Por favor, introduce un numero.");
-                scanner.next(); // Limpiar el buffer
+                scanner.next(); 
             }
         }
 
