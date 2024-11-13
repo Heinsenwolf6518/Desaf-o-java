@@ -25,7 +25,6 @@ public class Juegodeadivinanzas {
         System.out.println("Bienvenido al juego de adivinanza!");
         System.out.println("Se ha generado un numero entre " + MIN_NUMBER + " y " + MAX_NUMBER + ". Intenta adivinarlo.");
 
-        // Try-with-resource para AutoClose.
         try (Scanner scanner = new Scanner(System.in)) {
             while (!guessed) {
                 int attempt = getUserInput(scanner);
